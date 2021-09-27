@@ -1,0 +1,220 @@
+@media (max-width:700px){
+    body{
+        box-sizing: border-box;
+    }
+    nav{
+        position: sticky;
+        top:0;
+        z-index: 99;
+    }
+    header nav{
+        padding:0 ;
+    }
+    
+    nav h1{
+        font-weight: 800;
+        font-size: 32px;
+        margin-left:8px;
+    }
+    nav ul{
+        position: fixed;
+        order:3;
+/*        top:70px;*/
+        
+/*        opacity: 0;*/
+        top:90px;
+            right:0;
+        background: rgba(232, 232, 232, 0.49);
+        backdrop-filter:blur(10px);
+/*        color: white;*/
+        height:1000vh;
+        padding-inline-start:0px;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        
+        text-align: center;
+        width:235px;
+        z-index: 99999;
+/*        transition:opacity .6s,visibility 1s;*/
+/*        visibility: hidden;*/
+/*        display: none;*/
+        transform:translateX(200%);
+    
+    }
+    .show{
+/*        display: block;*/
+/*        right:0;*/
+/*        opacity: 1;*/
+        transform:translateX(0);
+/*        visibility: visible;*/
+        
+    }
+    nav ul li{
+        display: block;
+        padding:20px 25px;
+        color: grey;
+    }
+    nav ul li a{
+        color: #000000;
+    }
+    nav ul li:hover{
+        background: #0d304a;
+        color: white !important;
+    }
+    nav ul li:hover a{
+        color: white;
+    }
+    nav .nav-links .input-group{
+        display: none;
+    }
+    .nav-links{
+        display: flex;
+        align-items: center;
+    }
+    nav .nav-links .nav-link-1{
+        padding:8px 9px;
+    }
+    .humberger-icon{
+       display: block !important;
+        font-size: 30px;
+        margin-right:10px;
+    }.nav-link-1{
+        display: none;
+    }
+    .container{
+        width:340px !important;
+        margin:0 auto;
+    }
+    .text-area{
+        top:29%;
+    }
+    .text-area h1{
+        font-size: 50px;
+        position: relative;
+    }.h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-area h1::after{
+        content:'';
+        width:250px;
+        height:4px;
+        background-color: white;
+        position: absolute;
+        bottom:0px;
+        left:0;
+        z-index: 9;
+        text-align: center;
+        animation:increaser 4s ease ;
+        
+    }
+    @keyframes increaser{
+        from{
+            width:0%
+        }to{
+            width:250px;
+        }
+    }
+    .text-area p{
+        font-size: 14px;
+    }
+    .cont{
+        transform: translateY(-40%);
+        
+    }
+    .booking-section{
+        flex-wrap: wrap;
+        padding-top:
+    }
+    .booking-section h5,.booking-section select,.day h3,.promotion p,.promotion a{
+        margin-bottom: 13px;
+    }
+    .cont{
+/*    height:100vh;*/
+    width:100%;
+/*    background:grey;*/
+    transform: translateY(-6%);
+
+}
+    .text-section .text-dark{
+        color: #343333 !important;
+        
+    }
+    .text-section{
+        height:140px;
+    }
+    
+    .gallery{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(4,300px);
+        grid-row-gap: 15px;
+    }
+    .grid-gallery-section{
+        grid-row-gap: 10px;
+    }
+    .grid-gallery-section .one{
+        padding-top:98px;
+/*        padding-bottom: 10px;*/
+    }
+    .grid-gallery-section .one h3{
+        font-size: 18px;
+    }
+    .grid-gallery-section .one p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .grid-gallery-section .one a{
+        font-size: 12px;
+        padding:10px 8px;
+        
+    }
+    .grid-gallery-section .two{
+        grid-column: 2/4;
+    }
+    .grid-gallery-section .three{
+        grid-column: 2/4;
+    }
+    .grid-gallery-section .four{
+        grid-column: 1/4;
+    }
+    .grid-gallery-section .five{
+        grid-column: 1/4;
+    }
+    .discover-section-grid {
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,300px);
+        grid-row-gap: 10px;
+    }
+    footer{
+        margin-top: -235px;
+        box-sizing: border-box;
+        padding:0 20px;
+    }
+    footer .containerone{
+        
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,250px);
+        padding:0;
+    }
+    footer .containerone .left-section{
+    padding:0px;
+}
+    footer .containerone .right-section{
+    color: white;
+    padding:0px;
+}
+    footer .containerone .right-section p{
+    width:230px;
+}
+    footer .containerone .right-section .fa{
+        margin-bottom: 15px;
+    }
+    .bottom{
+        padding-top:4px;
+    }
+    .gmail h5 a{
+     font-size: 16px;
+}
+}
+

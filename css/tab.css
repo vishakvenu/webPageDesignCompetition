@@ -1,0 +1,125 @@
+@media (min-width:700px)and (max-width:1060px){
+  nav{
+
+/*       display: flex;*/
+       flex-direction: column; 
+      padding-bottom: 29px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding-left:0;
+      padding-right: 0;
+        
+    }
+    .container{
+        width:700px !important;
+        margin:0 auto;
+    }
+    nav h1{
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+    nav ul{
+        padding-bottom: 5px;
+        padding-top: 10px;
+        padding-inline-start: 0px;
+        
+    }
+    nav ul li{
+        padding-left:13px;
+        padding-right:13px;
+    }
+    nav ul li a{
+        font-size: 20px;
+        
+    }
+    nav .nav-links{
+        padding-top: 15px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    nav .nav-links .input-group{
+        display: none !important;
+    }
+    .text-area h1{
+        font-size: 88px;
+        position: relative;
+        
+    }
+    .h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text-area h1::after{
+        content:'';
+        width:400px;
+        height:4px;
+        background-color: white;
+        position: absolute;
+        bottom:0px;
+        left:0;
+        z-index: 9;
+        text-align: center;
+        animation:increaser 4s ease ;
+        
+    }
+    @keyframes increaser{
+        from{
+            width:0%
+        }to{
+            width:100%;
+        }
+    }
+    .text-area p{
+        font-size: 16px;
+    }
+    .booking-section{
+        flex-wrap: wrap;
+    }
+    .booking-section h5{
+        font-size: 14px
+    }
+    .booking-section select{
+        font-size: 16px;
+    }
+    .booking-section h5,select,day,promotion{
+        margin-bottom: 14px;
+    }
+    .booking-section .availabilty{
+        margin-top:10px;
+    }
+    .gallery{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,300px);
+            grid-gap:10px;
+    }
+    .text-dark{
+        color: white !important;
+    }
+    .one{
+        padding-top:65px ;
+        
+    }.one .contents{
+        justify-items: center;
+        align-self: center;
+        padding-top:40px;
+    }
+     .two{
+        grid-row: 1/3;
+        grid-column: 2/4;
+    }
+    .textcheck{
+        padding-top:80px;
+        font-size: 14px;
+    }
+.grid-gallery-section {
+    grid-template-rows: repeat(3,300px)
+}
+    footer{
+        margin-top: -450px !important;
+    }
+}
+
+
+
